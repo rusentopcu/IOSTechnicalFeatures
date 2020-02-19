@@ -22,24 +22,50 @@
                                     <segue destination="YEt-Ad-tD3" kind="show" identifier="toVC" id="1mo-lY-pab"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ba-nR-WOJ">
+                                <rect key="frame" x="139" y="549" width="136" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="8FN-LU-hXx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="signButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eVi-U1-2GP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4Q-2f-gUQ">
+                                <rect key="frame" x="119" y="662" width="176" height="71"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="YyH-dI-AbM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="322" id="80n-gd-gKs"/>
-                            <constraint firstItem="YyH-dI-AbM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="8Qi-w3-aiT"/>
-                            <constraint firstItem="YyH-dI-AbM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TX7-RQ-Ba7"/>
-                            <constraint firstItem="YyH-dI-AbM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kHS-CG-GNk"/>
+                            <constraint firstItem="YyH-dI-AbM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="35R-Q5-qCK"/>
+                            <constraint firstItem="YyH-dI-AbM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="322" id="5z5-Oy-rh4"/>
+                            <constraint firstItem="YyH-dI-AbM" firstAttribute="leading" secondItem="9ba-nR-WOJ" secondAttribute="leading" id="7Fq-dd-lVj"/>
+                            <constraint firstItem="YyH-dI-AbM" firstAttribute="trailing" secondItem="9ba-nR-WOJ" secondAttribute="trailing" id="FJf-S0-Rga"/>
+                            <constraint firstItem="9ba-nR-WOJ" firstAttribute="top" secondItem="YyH-dI-AbM" secondAttribute="bottom" constant="62" id="NHx-Av-0hN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o4Q-2f-gUQ" secondAttribute="bottom" constant="129" id="VDP-zI-JWX"/>
+                            <constraint firstItem="YyH-dI-AbM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZBT-tj-ui9"/>
+                            <constraint firstItem="YyH-dI-AbM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="Zfp-ph-w8R"/>
+                            <constraint firstItem="o4Q-2f-gUQ" firstAttribute="top" secondItem="9ba-nR-WOJ" secondAttribute="bottom" constant="22" id="fbF-d8-OQa"/>
+                            <constraint firstItem="9ba-nR-WOJ" firstAttribute="centerX" secondItem="o4Q-2f-gUQ" secondAttribute="centerX" id="uPC-XD-uXH"/>
+                            <constraint firstItem="o4Q-2f-gUQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="zXW-vp-z0P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="AiY-fz-GS6"/>
                     <connections>
                         <outlet property="changeButton" destination="YyH-dI-AbM" id="8tt-Q6-87K"/>
+                        <outlet property="myLabel" destination="o4Q-2f-gUQ" id="pql-Gv-34K"/>
+                        <segue destination="YEt-Ad-tD3" kind="show" identifier="toSecondVC" id="heW-cm-2wx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1100" y="115.84821428571428"/>
+            <point key="canvasLocation" x="942.02898550724649" y="115.84821428571428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="V2q-Xg-9U6">
@@ -55,13 +81,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signed In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jY-QY-GDk">
+                                <rect key="frame" x="111" y="537" width="192" height="113"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="kjN-aA-vwS" firstAttribute="centerX" secondItem="Fi9-Ve-uRG" secondAttribute="centerX" id="9hD-Ie-7vc"/>
-                            <constraint firstItem="kjN-aA-vwS" firstAttribute="centerY" secondItem="Fi9-Ve-uRG" secondAttribute="centerY" id="hB4-RD-9RQ"/>
-                            <constraint firstItem="kjN-aA-vwS" firstAttribute="top" secondItem="Wqq-F5-XaM" secondAttribute="top" constant="313" id="nyz-Kg-8Vl"/>
-                            <constraint firstItem="kjN-aA-vwS" firstAttribute="leading" secondItem="Wqq-F5-XaM" secondAttribute="leading" constant="106" id="xcL-d9-QHJ"/>
+                            <constraint firstItem="kjN-aA-vwS" firstAttribute="top" secondItem="Wqq-F5-XaM" secondAttribute="top" constant="313" id="48P-0A-hhO"/>
+                            <constraint firstItem="kjN-aA-vwS" firstAttribute="leading" secondItem="Wqq-F5-XaM" secondAttribute="leading" constant="106" id="7Se-yU-hhd"/>
+                            <constraint firstItem="kjN-aA-vwS" firstAttribute="centerY" secondItem="Fi9-Ve-uRG" secondAttribute="centerY" id="Ve2-hc-tpg"/>
+                            <constraint firstItem="3jY-QY-GDk" firstAttribute="top" secondItem="kjN-aA-vwS" secondAttribute="bottom" constant="42" id="l98-sR-t9q"/>
+                            <constraint firstItem="kjN-aA-vwS" firstAttribute="centerX" secondItem="3jY-QY-GDk" secondAttribute="centerX" id="pLD-AS-sJu"/>
+                            <constraint firstItem="3jY-QY-GDk" firstAttribute="leading" secondItem="Wqq-F5-XaM" secondAttribute="leading" constant="111" id="s3X-jL-z1Q"/>
+                            <constraint firstItem="kjN-aA-vwS" firstAttribute="centerX" secondItem="Fi9-Ve-uRG" secondAttribute="centerX" id="uZS-fC-wNa"/>
+                            <constraint firstItem="Wqq-F5-XaM" firstAttribute="bottom" secondItem="3jY-QY-GDk" secondAttribute="bottom" constant="212" id="xSQ-uS-e6V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wqq-F5-XaM"/>
                     </view>
@@ -69,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UA3-VQ-iwW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1908.6956521739132" y="115.84821428571428"/>
+            <point key="canvasLocation" x="1723" y="116"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1h7-WT-9Pg">
@@ -90,4 +126,7 @@
             <point key="canvasLocation" x="189.85507246376812" y="115.84821428571428"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="heW-cm-2wx"/>
+    </inferredMetricsTieBreakers>
 </document>
